@@ -10,4 +10,14 @@ const myphone = newphone("Iphone","14",23);
 myphone.makecall(3200000)
 myphone.batterystatus()   
 
-const myBook = new Book
+const myBook = new Book("The Teaching Ministry Of the Church", "William R. Yount",)
+console.log(myBook.getSummary());
+myBook.readPage();
+
+const myLaptop = new Laptop("HP", "Touch",4);
+myLaptop.bootUp();
+myLaptop.shutDown();
+
+const myBackpack = new Backpack("Jansport", "lavender", 30);
+myBackpack.open();
+myBackpack.checkCapacity();

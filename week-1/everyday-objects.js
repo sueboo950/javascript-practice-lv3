@@ -36,8 +36,8 @@ class Phone{
     console.log(`calling ${number} from ${this.brand} ${this.model}.`);
   }
   batterystatus(){
-    console.log(`Battery life is at ${this.batterylife}%`);
-  }
+    console.log(`Your battery life is at ${this.batterylife}%`)
+  };
 }
 // Class: Book
 // Properties: title, author, pages
@@ -70,11 +70,25 @@ class Laptop{
     this.model = model;
     this.ramsize = ramsize;
 }
+  bootUp(){
+    console.log(`The ${this.brand}with the model of ${this.model}is booting up with ${this.ramsize}`)
+  }
 }
 // Class: Backpack
 // Properties: brand, color, capacity
 // Methods:
 // open(): Logs "Opening the [color] [brand] backpack."
 // checkCapacity(): Logs "This backpack has a capacity of [capacity] liters."
+class Backpack {
+  constructor(brand, color,capacity){
+    this.brand = brand;
+    this.color =color;
+    this.capacity =capacity;
+  }
+  open(){
+    console.log(`I opened the ${this.color} ${this.brand} backpack recently. `)
 
-export { Car };
+  }
+}
+
+export { Car, Phone, Book, Laptop, Backpack };
